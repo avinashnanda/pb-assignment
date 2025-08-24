@@ -1,0 +1,21 @@
+# .dockerignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.env
+.env.*
+.venv/
+venv/
+ENV/
+env/
+.idea/
+.vscode/
+.git/
+.gitignore
+dockerfile
+chroma_db*
+data*

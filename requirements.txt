@@ -1,0 +1,38 @@
+# -------------------------------
+# LangChain & related
+# -------------------------------
+langchain>=0.3.27
+langchain-chroma
+langchain-core>=0.3.74
+langchain-huggingface>=0.3.1
+langchain-openai>=0.3.31
+
+# -------------------------------
+# Data and ML packages
+# -------------------------------
+numpy
+pandas>=2.3.2
+sentence-transformers==5.1.0
+matplotlib>=3.10.5
+
+# -------------------------------
+# Notebook / Jupyter
+# -------------------------------
+ipykernel>=6.30.1
+ipywidgets>=8.1.7
+
+# -------------------------------
+# Web / API
+# -------------------------------
+gradio>=5.43.1
+fastapi>=0.116.1
+uvicorn>=0.35.0
+
+# -------------------------------
+# Optional ML utilities
+# -------------------------------
+huggingface-hub>=0.34.4
+hf-xet
+iprogress>=0.4
+pydantic>=2.11.7
+langgraph>=0.6.5
