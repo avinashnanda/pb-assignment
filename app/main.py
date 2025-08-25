@@ -25,9 +25,10 @@ app.add_middleware(
 # ----------- Init Models & Pipelines -----------
 llm = ChatOpenAI(
     model="local-model",
-    base_url="http://localhost:1234/v1",
+    base_url="http://host.docker.internal:1234/v1",
     api_key="not-needed"
 )
+
 
 pipeline = ImageVectorPipeline(persist_dir="chroma_db")
 searcher = SemanticSearcher(pipeline.get_vectorstore())
