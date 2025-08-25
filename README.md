@@ -1,6 +1,34 @@
 # Visual Search System
 An  visual search system that allows users to search image repositories using natural language queries. 
 
+# Project Stucture
+```
+pb-assignment
+├─ .dockerignore               # Specifies files/folders to exclude from Docker image build
+├─ app                         # FastAPI application folder
+│  └─ main.py                  # Entry point for FastAPI app
+├─ benchmarking_retriever.ipynb # Jupyter notebook for benchmarking retrieval performance
+├─ dockerfile                  # Instructions to build Docker image
+├─ docs                        # Documentation folder
+│  ├─ Image-search-problem-statement.docx # Problem statement description
+│  └─ System Architecture.docx            # High-level architecture design doc
+├─ End_to_end_example.ipynb    # Jupyter notebook showing full workflow example
+├─ README.md                   # Project description, setup instructions
+├─ requirements.txt            # Python dependencies
+├─ search_app.py               # Gradio seach application
+├─ src                         # Core source code
+│  ├─ explain_images.py        # Module to generate explanations/descriptions for images
+│  ├─ ingest_images.py         # Module to ingest/preprocess images into vector DB
+│  ├─ semantic_search.py       # Implements semantic search logic
+│  ├─ vector_store.py          # Creates vector store using ChromaDB
+├─ tests                       # Unit/integration tests
+│  └─ test_searcher.py         # Tests cases
+└─ utils                       # Utility/helper functions
+   ├─ download_images.py       # Script for downloading images from external sources
+   ├─ embedding_utils.py       # Utilities for creating/managing embeddings
+   ├─ image_utils.py           # General image processing helpers
+```
+
 ## 🚀 Features
 - Store and index images with embeddings.
 - Perform semantic search with natural language queries.

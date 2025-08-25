@@ -3,7 +3,7 @@ import sys, os,shutil
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from PIL import Image
 from src.vector_store import ImageVectorPipeline
-from src.symantic_search import SemanticSearcher
+from src.semantic_search import SemanticSearcher
 
 TEST_DB = "./test_db"
 

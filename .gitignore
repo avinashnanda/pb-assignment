@@ -11,3 +11,4 @@ wheels/
 /chroma_db*
 /data*
 test_db
+*pytest_cache*

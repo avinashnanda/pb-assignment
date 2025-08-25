@@ -2,7 +2,7 @@ from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from src.vector_store import ImageVectorPipeline
-from src.symantic_search import SemanticSearcher
+from src.semantic_search import SemanticSearcher
 from src.explain_images import ExplanationGenerator
 from langchain_openai import ChatOpenAI
 
